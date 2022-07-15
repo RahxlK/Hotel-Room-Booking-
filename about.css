@@ -1,0 +1,94 @@
+
+
+body{
+  background: url("new3.jpg");
+  background-size: 100% 100%;
+  overflow: hidden;
+
+}
+h1
+{
+  color: white;
+  font-family: "Audiowide", sans-serif;
+  padding-left: 30px;
+  padding-top: 20px;
+  letter-spacing: 4px;
+  font-size: 30px;
+  position: relative;
+  top:30px;
+}
+
+h2
+{
+  color:white;
+  font-family: monospace;
+  font-style: oblique;
+  padding-left: 30px;
+  position: relative;
+  top: -20px;
+}
+
+
+
+.font-effect-neon
+{
+  font-family: "Audiowide", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left:90px;
+  top:-340px;
+  background: none;
+  color:#f0ff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px #f0ff;
+  border: none;
+  padding: 5px;
+}
+
+
+figure{
+  margin-top: 200px;
+  position: relative;
+  left:15px;
+}
+
+.images{
+  position: relative;
+  top:20px;
+  left:950px;
+}
+img{
+
+  border: 3px solid #f0ff;
+}
+.slick-next, .slick-prev{
+    top: 300%%; !important;
+    z-index: 999;
+}
+.slick-prev{
+    position: absolute;
+    left: -45px !important;
+}
+.slick-next{
+    position: absolute;
+    right: 980px !important;
+}
+.slick-next:before, .slick-prev:before{
+    font-size: 35px !important;
+}
+.slick-dots{
+    padding-left: 400px;
+    margin-bottom: -50px;
+}
+.slick-dots li{
+    margin-right: 15px !important;
+}
+.slick-dots li.slick-active:after{
+    position: absolute;
+    content: '.';
+    bottom: -15px;
+    left: 6px;
+    opacity: 1;
+    color: red;
+    font-size: 36px;
+}

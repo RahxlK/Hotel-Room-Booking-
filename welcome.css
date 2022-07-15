@@ -1,0 +1,53 @@
+
+body{
+background: url("img.jpg");
+overflow:hidden;
+}
+
+.fa-map-marker{
+
+ color:white;
+ position:relative;
+ left:50px;
+ top:-640px;
+ text-shadow: 0.8px 0.9px;
+}
+
+.fa-phone{
+
+  color:white;
+  position: relative;
+  left:-76px;
+  top:-680px;
+  text-shadow: 0.8px 0.9px;
+
+}
+
+button{
+  font-family: "Audiowide", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left:400px;
+  top:-290px;
+  background: none;
+  color:#f0ff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px #f0ff;
+  border: none;
+  padding: 5px;
+
+}
+span{
+  font-family: monospace;
+  font-size: 20px;
+}
+
+h1{
+font-family: "Sofia", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 245px;
+  font-size: 90px;
+  letter-spacing: 5px;
+  font-weight: 200px;
+}

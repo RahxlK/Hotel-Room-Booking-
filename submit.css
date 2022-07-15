@@ -1,0 +1,15 @@
+h1
+{
+  font-family: "Audiowide", sans-serif;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  letter-spacing: 6px;
+  text-outline:4px;
+  position: relative;
+  top: 300px;
+}
+body{
+background-image: url("ty.png");
+background-size: 100% 100%;
+}

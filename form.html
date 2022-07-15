@@ -1,0 +1,87 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<title>Form Page</title>
+<link rel="stylesheet "  href="form.css">
+
+<script>
+			function VALIDATE() {
+				var name =
+					document.forms.form1.fname.value;
+
+				var phone =
+					document.forms.form1.numbr.value;
+				var regPhone=/^\d{10}$/;
+				var regName = /\d+$/g;
+
+				if (name == "" || regName.test(name)) {
+					window.alert("Please enter your name properly.");
+					name.focus();
+					return false;
+				}
+
+				if (phone == "" || !regPhone.test(phone)) {
+					alert("Please enter valid phone number.");
+					phone.focus();
+					return false;
+				}
+
+
+
+				return true;
+			}
+		</script>
+
+</head>
+<body>
+
+
+
+<h1 class="font-effect-shadow-multiple">Book Your Dream Room With Us!</h1>
+<marquee ><b>Please check your registered mobile number for booking confirmation!</b></marquee>
+
+
+<div class="login-box">
+
+  <form name = "form1" onsubmit="return VALIDATE()" method="post" >
+
+    <div class="user-box">
+      <input type="text"  name ="fname" >
+      <label for="name">Name</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name = "numbr"  >
+      <label for="number">Mobile Number</label>
+    </div>
+    <div class="user-box">
+      <input type="text" required maxlength="50" name = "address" required pattern="[A-Za-z]+">
+      <label>Address</label>
+    </div>
+    <div class="user-box">
+      <input type="number"  required maxlength="2" name = "person" pattern="[0-9]+">
+      <label> Number Of Persons</label>
+    </div>
+    <div class="user-box">
+      <input type="text" id ="ci" name="date" onfocus="(this.type='date')"  required>
+      <label> Select Checkin Date </label>
+    </div>
+    <div class="user-box">
+      <input type="text" id="co" name="date" onfocus="(this.type='date')"  required>
+      <label> Select CheckOut Date </label>
+    </div>
+
+    <a href="submit.html" >
+
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <button  type="submit" ><b> SUBMIT </b></Button>
+      </a>
+</div>
+
+
+</body>
+</html>

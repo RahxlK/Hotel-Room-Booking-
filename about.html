@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet "  href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+
+</head>
+<body>
+<h1 class="font-effect-emboss" >Relive your night in the 80's!</h1>
+<h2 class="font-effect-shadow-multiple" > &nbsp;  </h2>
+
+
+
+
+
+  <div class="images">
+    <div><img src="1.jpg" width="500" height="400" hspace="3px"></div>
+    <div><img src="2.jpg" width="500" height="400" hspace="3px"></div>
+    <div><img src="3.jpg" width="500" height="400" hspace="3px"></div>
+    <div><img src="4.jpg" width="500" height="400" hspace="3px"></div>
+    <div><img src="5.jpg" width="500" height="400 " hspace="3px"></div>
+</div>
+
+<div class="btn1">
+<a href="C:\Users\Rahul\Downloads\Hotel Room Booking\form.html">
+<button class="font-effect-neon" type="submit">Book a Room</button>
+</a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".images").slick({
+            autoplay:false,
+            dots:true,
+            speed:500,
+            customPaging : function(slider, i){
+                var thumb = $ (slider.$slides[i]).data();
+                return '<a>'+(i+1)+'</a>';
+            },
+        })
+    });
+</script>
+
+
+
+
+
+
+
+  </body>
+  </html>

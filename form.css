@@ -1,0 +1,170 @@
+
+h1
+{
+  font-family: "Audiowide", sans-serif;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  letter-spacing: 6px;
+  text-outline:4px;
+  position: relative;
+  top: 15px;
+}
+
+
+::-webkit-calendar-picker-indicator
+{
+    filter: invert(1);
+}
+
+input[type="date"]:focus::before {
+    content: none
+}
+
+.non-empty-date input[type="date"]:disabled::before {
+    content: none;
+}
+
+.empty-date input[type="date"]:disabled::before {
+    content: attr(data-placeholder);
+    width: 100%;
+}
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+
+  background-image: url("ty.png");
+  background-size: 100% 100%;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+marquee{
+  color:white;
+  position: relative;
+  top:620px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+}
+p
+{
+  color: white;
+  font-family: monospace;
+}
+
+.login-box form a {
+
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+.login-box form a {
+
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+.login-box form a {
+
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 30px;
+  letter-spacing: 4px
+}
+button{
+  background: none;
+  color:white;
+  border: none;
+  letter-spacing: 1px;
+}
+
+
+
+.login-box a:hover {
+  background: #e542e0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #e542e0,
+              0 0 25px #e542e0,
+              0 0 50px #e542e0,
+              0 0 100px #e542e0;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
